@@ -20,6 +20,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: var(--gris);
     margin: 2rem;
+    text-align: center;
 }
 
 header{
@@ -79,9 +80,10 @@ header nav ul li:hover{
 .tarjetas{
     display: flex;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 5rem;
     border-bottom: var(--celeste) solid 5px;
-    padding-bottom: 2rem; ;
+    padding-bottom: 2rem;
+    width: 100%;
 }
 
 .tarjeta{
@@ -133,13 +135,15 @@ header nav ul li:hover{
     justify-content: center;
     align-items: center;
     margin: 6rem 8rem;
-    background-color: var(--blanco);
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148817572.jpg);
+    background-size: cover;
     padding: 2rem;
     border-radius: 30px;
     border: var(--gris_oscuro) solid 5px ;
     align-items: center;
     box-shadow: var(--gris_oscuro) 0px 0px 10px;
     text-align: center;
+
 }
 
 .contacto h2{
@@ -247,11 +251,212 @@ footer a{
     margin: 0.5rem;
 }
 
-@media screen and (max-width: 768px){
-    header{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 1rem;
     }
+
+    header {
+        padding: 1rem;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tarjeta img{
+        width: 100%;
+    }
+
+    .contacto {
+        margin: 2rem;
+    }
+
+    .contacto h2 {
+        font-size: 3rem;
+    }
+
+    .redes {
+        gap: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 1rem;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    header img {
+        width: 180px;
+    }
+    
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav ul li a{
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    .contenido h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .tarjetas {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .contacto {
+        margin: 2rem;
+    }
+    
+    .contacto h2 {
+        font-size: 3rem;
+    }
+    
+    .redes {
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 1rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    header img {
+        width: 110px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+
+    .contenido h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .contenido p{
+        font-size: 0.8rem;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contacto {
+        margin: 2rem;
+    }
+
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+    .redes {
+        gap: 3rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+    footer a{
+        font-size: 1rem;
+    }
+
+    footer img{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 1rem;
+    }
+    header {
+        padding: 0.5rem;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        margin: 0;
+        font-size: 0.7rem;
+    }
+
+    .contenido h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contacto {
+        margin: 2rem;
+    }
+
+    .contacto h2 {
+        font-size: 1.5rem;
+    }
+
+    .contacto h3{
+        font-size: 1.5rem;
+    }
+
+    .redes {
+        gap: 3rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+    footer a{
+        font-size: 1rem;
+    }
+    
 }
